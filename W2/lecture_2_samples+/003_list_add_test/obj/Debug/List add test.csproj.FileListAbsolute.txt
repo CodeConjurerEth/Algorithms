@@ -1,0 +1,7 @@
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\003_list_add_test\bin\Debug\list_add_test.exe.config
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\003_list_add_test\bin\Debug\list_add_test.exe
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\003_list_add_test\bin\Debug\list_add_test.pdb
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\003_list_add_test\obj\Debug\List add test.csprojAssemblyReference.cache
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\003_list_add_test\obj\Debug\List add test.csproj.CoreCompileInputs.cache
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\003_list_add_test\obj\Debug\list_add_test.exe
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\003_list_add_test\obj\Debug\list_add_test.pdb

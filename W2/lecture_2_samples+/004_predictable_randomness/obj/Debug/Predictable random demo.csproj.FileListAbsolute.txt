@@ -1,0 +1,7 @@
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\004_predictable_randomness\obj\Debug\Predictable random demo.csprojAssemblyReference.cache
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\004_predictable_randomness\obj\Debug\Predictable random demo.csproj.CoreCompileInputs.cache
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\004_predictable_randomness\bin\Debug\predictable_random.exe.config
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\004_predictable_randomness\bin\Debug\predictable_random.exe
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\004_predictable_randomness\bin\Debug\predictable_random.pdb
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\004_predictable_randomness\obj\Debug\predictable_random.exe
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\004_predictable_randomness\obj\Debug\predictable_random.pdb

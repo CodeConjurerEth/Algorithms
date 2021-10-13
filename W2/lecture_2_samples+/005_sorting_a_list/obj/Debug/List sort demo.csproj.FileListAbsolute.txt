@@ -1,0 +1,7 @@
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\005_sorting_a_list\obj\Debug\List sort demo.csprojAssemblyReference.cache
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\005_sorting_a_list\obj\Debug\List sort demo.csproj.CoreCompileInputs.cache
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\005_sorting_a_list\bin\Debug\list_sort.exe.config
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\005_sorting_a_list\bin\Debug\list_sort.exe
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\005_sorting_a_list\bin\Debug\list_sort.pdb
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\005_sorting_a_list\obj\Debug\list_sort.exe
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\005_sorting_a_list\obj\Debug\list_sort.pdb

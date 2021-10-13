@@ -1,0 +1,12 @@
+﻿enum MinionRace
+{
+	BEAST,
+	DEMON,
+	DRAGON,
+	ELEMENTAL,
+	MECH,
+	MURLOC,
+	PIRATE,
+	TOTEM,
+	NONE
+}

@@ -1,0 +1,13 @@
+﻿enum HeroClass
+{
+	DRUID,
+	HUNTER,
+	MAGE,
+	PALADIN,
+	PRIEST,
+	ROGUE,
+	SHAMAN,
+	WARLOCK,
+	WARRIOR,
+	NEUTRAL
+}

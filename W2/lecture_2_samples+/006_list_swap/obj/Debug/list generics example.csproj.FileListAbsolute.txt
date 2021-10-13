@@ -1,0 +1,7 @@
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\002_list_generics\bin\Debug\list_generics.exe.config
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\002_list_generics\bin\Debug\list_generics.exe
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\002_list_generics\bin\Debug\list_generics.pdb
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\002_list_generics\obj\Debug\list generics example.csprojAssemblyReference.cache
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\002_list_generics\obj\Debug\list generics example.csproj.CoreCompileInputs.cache
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\002_list_generics\obj\Debug\list_generics.exe
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples+\002_list_generics\obj\Debug\list_generics.pdb

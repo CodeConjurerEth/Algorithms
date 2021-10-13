@@ -1,0 +1,7 @@
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples-\001_HearthStone_basics\bin\Release\HearthStone.exe.config
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples-\001_HearthStone_basics\bin\Release\HearthStone.exe
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples-\001_HearthStone_basics\bin\Release\HearthStone.pdb
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples-\001_HearthStone_basics\obj\Release\HearthStone.csprojAssemblyReference.cache
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples-\001_HearthStone_basics\obj\Release\HearthStone.csproj.CoreCompileInputs.cache
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples-\001_HearthStone_basics\obj\Release\HearthStone.exe
+D:\data\Dropbox\HW\saxion\courses_cmgt\1_4_algorithms\101_slides\lecture_2_samples-\001_HearthStone_basics\obj\Release\HearthStone.pdb
