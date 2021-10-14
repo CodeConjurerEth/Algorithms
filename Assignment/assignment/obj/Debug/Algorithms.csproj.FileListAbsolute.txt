@@ -12,3 +12,7 @@ D:\data\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.stude
 D:\data\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
 D:\data\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\obj\Debug\dcg.exe
 D:\data\saxion\courses_cmgt\1_4_algorithms\102_assignments\cmgt.algorithms.student\assignment\obj\Debug\dcg.pdb
+C:\Users\miuvl\Vlad\Y1.T4\Algorithms\Algorithms\Assignment\assignment\obj\Debug\Algorithms.csprojAssemblyReference.cache
+C:\Users\miuvl\Vlad\Y1.T4\Algorithms\Algorithms\Assignment\assignment\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+C:\Users\miuvl\Vlad\Y1.T4\Algorithms\Algorithms\Assignment\assignment\obj\Debug\dcg.exe
+C:\Users\miuvl\Vlad\Y1.T4\Algorithms\Algorithms\Assignment\assignment\obj\Debug\dcg.pdb
