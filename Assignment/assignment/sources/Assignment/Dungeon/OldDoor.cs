@@ -5,7 +5,7 @@ using System.Drawing;
  * This class represents (the data for) a Door, at this moment only a position in the dungeon.
  * Changes to this class might be required based on your specific implementation of the algorithm.
  */
-class Door
+class OldDoor
 {
 	public readonly Point location;
 
@@ -18,12 +18,12 @@ class Door
 	//Again, whether you need flags like this depends on how you implement the algorithm, maybe you need other flags
 	public bool horizontal = false;
 
-	public Door(Point pLocation)
+	public OldDoor(Point pLocation)
 	{
 		location = pLocation;
 	}
 
-	//TODO: Implement a toString method for debugging
+	// Implement a toString method for debugging
 	//Return information about the type of object and it's data
 	//eg Door: (x,y)
 

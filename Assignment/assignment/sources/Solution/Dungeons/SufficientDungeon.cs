@@ -26,32 +26,32 @@ class SufficientDungeon : Dungeon
     {
         rooms.Add(new Room(new Rectangle(0,0, size.Width, size.Height)));
 
-        for (int index = 0; index < rooms.Count; index++) {
+        foreach (Room roomToSplit in rooms) { //gonna have to change this
 	        List<Room> newRooms = new List<Room>();
-	        newRooms.AddRange(rooms[index].Split(pMinimumRoomSize));
+	        Door newDoor = null;
 	        
-	        Console.WriteLine(rooms[index].ToString() + " was split into: "); 
-	        Console.WriteLine(newRooms[0].ToString());
-	        if(newRooms.Count > 1)
-				Console.WriteLine(newRooms[1].ToString());
-			
-	        rooms.Remove(rooms[index]);
+	        newRooms.AddRange(roomToSplit.Split(pMinimumRoomSize, doors));
+	        bool wasSplit = newRooms.Count == 2;
+	        if (wasSplit) {
+		        newDoor = new Door(roomToSplit, newRooms);
+		        doors.Add(newDoor);
+	        }
+	        /*Debugging*/
+	        Console.WriteLine(roomToSplit.ToString() + " was split into: ");
+	        if (newDoor != null) {
+		        Console.WriteLine(newDoor.ToString());
+	        }/**/
+
+	        rooms.Remove(roomToSplit);
 	        rooms.AddRange(newRooms);
-	        
-
         }
-
-
-        // rooms.Add(new Room(new Rectangle(0, 0, size.Width/2+1, size.Height)));
-        // rooms.Add(new Room(new Rectangle(size.Width/2, 0, size.Width/2, size.Height)));
-        // doors.Add(new Door(new Point(size.Width / 2, size.Height / 2 + 10)));
     }
 
     public override string ToString()
     {
 	    string s = "";
-	    for (int index = 0; index < rooms.Count; index++) {
-		    s += rooms[index].ToString() + "\n";
+	    for (int index = 0; index < doors.Count; index++) {
+		    s += doors[index].ToString() + "\n";
 	    }
 		return s;
     }

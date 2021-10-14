@@ -31,7 +31,7 @@ abstract class Dungeon : Canvas
 	//The colors for the walls and doors
 	//TODO:try changing 255 to 128 to see where the room boundaries are...
 	private Pen wallPen = new Pen(Color.FromArgb(255, Color.Black));
-	private Pen doorPen = Pens.White;
+	private Pen doorPen = Pens.Green;
 
 	/**
 	 * Create empty dungeon instance of the specified size.
@@ -68,7 +68,7 @@ abstract class Dungeon : Canvas
 
 		generate(pMinimumRoomSize);
 
-		System.Console.WriteLine(this.GetType().Name + ".Generate:Dungeon generated.");
+		System.Console.WriteLine(this.GetType().Name + ".Generate:Dungeon generated. \n");
 		System.Console.WriteLine(this.ToString());
 
 		if (autoDrawAfterGenerate) draw();

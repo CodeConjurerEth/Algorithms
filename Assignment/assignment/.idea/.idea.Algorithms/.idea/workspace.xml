@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="358043f4-d2d6-4284-af52-f6442a01ac66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sources/Assignment/Dungeon/OldRoom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sources/Solution/DungeonObj/Door.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Algorithms.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/dcg.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/dcg.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/dcg.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/dcg.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Algorithms.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Algorithms.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Algorithms.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Algorithms.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/dcg.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/dcg.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/dcg.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/dcg.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/Assignment/Dungeon/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sources/Solution/Room/Room.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/Assignment/Dungeon/SufficientDungeon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/Assignment/Dungeon/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sources/Assignment/Dungeon/OldDoor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/Assignment/Dungeon/Dungeon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sources/Assignment/Dungeon/Dungeon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/Solution/Dungeon/SufficientDungeon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sources/Solution/Dungeons/SufficientDungeon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/Solution/Room/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sources/Solution/DungeonObj/Room.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,16 +41,23 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/sources/Assignment/Dungeon/Door.cs" />
-      <option value="$PROJECT_DIR$/sources/Assignment/Dungeon/SampleDungeon.cs" />
       <option value="$PROJECT_DIR$/sources/Assignment/Dungeon/MyDungeon.cs" />
       <option value="$PROJECT_DIR$/sources/AlgorithmsAssignment.cs" />
-      <option value="$PROJECT_DIR$/sources/Assignment/Dungeon/Dungeon.cs" />
       <option value="$PROJECT_DIR$/sources/Assignment/Dungeon/SufficientDungeon.cs" />
       <option value="$PROJECT_DIR$/sources/Assignment/Dungeon/Room.cs" />
       <option value="$PROJECT_DIR$/../.gitignore" />
-      <option value="$PROJECT_DIR$/../../.gitignore" />
       <option value="$PROJECT_DIR$/sources/Assignment/Dungeon/OldRoom.cs" />
+      <option value="$PROJECT_DIR$/../../.gitignore" />
+      <option value="$PROJECT_DIR$/sources/Assignment/Dungeon/Door.cs" />
+      <option value="$PROJECT_DIR$/sources/Solution/Room/Room.cs" />
+      <option value="$PROJECT_DIR$/sources/Assignment/Dungeon/OldDoor.cs" />
+      <option value="$PROJECT_DIR$/sources/Solution/Dungeon/Door.cs" />
+      <option value="$PROJECT_DIR$/sources/Assignment/NodeGraph/SampleDungeonNodeGraph.cs" />
+      <option value="$PROJECT_DIR$/sources/Assignment/Dungeon/SampleDungeon.cs" />
+      <option value="$PROJECT_DIR$/sources/Assignment/Dungeon/Dungeon.cs" />
+      <option value="$PROJECT_DIR$/sources/Solution/DungeonObj/Door.cs" />
+      <option value="$PROJECT_DIR$/sources/Solution/Dungeons/SufficientDungeon.cs" />
+      <option value="$PROJECT_DIR$/sources/Solution/DungeonObj/Room.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zRabKWBIsFHjxZkZCDOcv7tXyv" />
@@ -107,7 +115,8 @@
       <workItem from="1634195225042" duration="1214000" />
       <workItem from="1634196850435" duration="240000" />
       <workItem from="1634197333318" duration="662000" />
-      <workItem from="1634198654835" duration="361000" />
+      <workItem from="1634198654835" duration="634000" />
+      <workItem from="1634199447359" duration="8767000" />
     </task>
     <servers />
   </component>
