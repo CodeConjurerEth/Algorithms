@@ -1,8 +1,8 @@
 # Project exclude paths
 
 Assignment/assignment/bin/
-GXPEngine/bin/
+Assignment/gxpengine/gxpengine/GXPEngine/bin/
 Assignment/assignment/obj/
-GXPEngine/obj/
-.idea/
-.vs/
+Assignment/gxpengine/gxpengine/GXPEngine/obj/
+Assignment/assignment/.idea/
+Assignment/assignment/.vs/
