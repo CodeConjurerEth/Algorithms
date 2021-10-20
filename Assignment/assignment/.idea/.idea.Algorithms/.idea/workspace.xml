@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="358043f4-d2d6-4284-af52-f6442a01ac66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sources/Solution/DungeonObj/Door.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Algorithms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algorithms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/dcg.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/dcg.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/dcg.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/dcg.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Algorithms.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Algorithms.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Algorithms.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Algorithms.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/dcg.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/dcg.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/dcg.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/dcg.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/Assignment/Dungeon/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sources/Assignment/Dungeon/OldDoor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/Assignment/Dungeon/Dungeon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sources/Assignment/Dungeon/Dungeon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/Solution/Dungeon/SufficientDungeon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sources/Solution/Dungeons/SufficientDungeon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/Solution/Room/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sources/Solution/DungeonObj/Room.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/Solution/DungeonObj/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sources/Solution/DungeonObj/Room.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/Solution/Dungeons/SufficientDungeon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/sources/Solution/Dungeons/SufficientDungeon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +31,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/485DB82A-61B1-468B-BC9D-4475AB6B2B84/f8/535f0975/Rectangle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Y1.T3/Physics.Programming/Assignment/Miu_Vlad-Ilie_ECM1VEc_477602/Game/Game/Vec2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FD824CFB-5500-4855-B9E6-D51B008C90E4/3f/bdb00cc8/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/485DB82A-61B1-468B-BC9D-4475AB6B2B84/6d/a9d97fc5/Point.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6A0E661-5EE0-4EA7-AD53-5B38F9316104/63/d285917b/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -56,8 +53,8 @@
       <option value="$PROJECT_DIR$/sources/Assignment/Dungeon/SampleDungeon.cs" />
       <option value="$PROJECT_DIR$/sources/Assignment/Dungeon/Dungeon.cs" />
       <option value="$PROJECT_DIR$/sources/Solution/DungeonObj/Door.cs" />
-      <option value="$PROJECT_DIR$/sources/Solution/Dungeons/SufficientDungeon.cs" />
       <option value="$PROJECT_DIR$/sources/Solution/DungeonObj/Room.cs" />
+      <option value="$PROJECT_DIR$/sources/Solution/Dungeons/SufficientDungeon.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1zRabKWBIsFHjxZkZCDOcv7tXyv" />

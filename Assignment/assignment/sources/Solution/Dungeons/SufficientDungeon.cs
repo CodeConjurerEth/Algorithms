@@ -26,18 +26,21 @@ class SufficientDungeon : Dungeon
     {
         rooms.Add(new Room(new Rectangle(0,0, size.Width, size.Height)));
 
-        foreach (Room roomToSplit in rooms) { //gonna have to change this
+        for (int index = 0; index < 15; index++) { //gonna have to change this
 	        List<Room> newRooms = new List<Room>();
 	        Door newDoor = null;
+	        Random random = new Random();
+	        var roomToSplit = rooms[random.Next(0, rooms.Count-1)];
 	        
-	        newRooms.AddRange(roomToSplit.Split(pMinimumRoomSize, doors));
+	        Console.WriteLine("\n" + roomToSplit.ToString() + " to be split into: "); //TODO: rooms are added before door overlap check?
+	        
+	        newRooms.AddRange(roomToSplit.Split(pMinimumRoomSize));
 	        bool wasSplit = newRooms.Count == 2;
 	        if (wasSplit) {
 		        newDoor = new Door(roomToSplit, newRooms);
 		        doors.Add(newDoor);
 	        }
 	        /*Debugging*/
-	        Console.WriteLine(roomToSplit.ToString() + " was split into: ");
 	        if (newDoor != null) {
 		        Console.WriteLine(newDoor.ToString());
 	        }/**/
