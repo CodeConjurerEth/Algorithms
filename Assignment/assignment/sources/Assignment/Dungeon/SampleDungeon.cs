@@ -23,12 +23,12 @@ class SampleDungeon : Dungeon
 	{
 		//left room from 0 to half of screen + 1 (so that the walls overlap with the right room)
 		//(TODO: experiment with removing the +1 below to see what happens with the walls)
-		rooms.Add(new Room(new Rectangle(0, 0, size.Width/2+1, size.Height)));
+		Rooms.Add(new Room(new Rectangle(0, 0, Size.Width/2+1, Size.Height)));
 		//right room from half of screen to the end
-		rooms.Add(new Room(new Rectangle(size.Width/2, 0, size.Width/2, size.Height)));
+		Rooms.Add(new Room(new Rectangle(Size.Width/2, 0, Size.Width/2, Size.Height)));
 		//and a door in the middle wall with a random y position
 		//TODO:experiment with changing the location and the Pens.White below
-		doors.Add(new Door(new Point(size.Width / 2, size.Height / 2 + Utils.Random(-5, 5))));
+		Doors.Add(new Door(new Point(Size.Width / 2, Size.Height / 2 + Utils.Random(-5, 5))));
 	}
 
 	public override string ToString()

@@ -32,14 +32,14 @@ class Room
 		return newRooms;
 	}
 
-	private void split(List<Room> newRooms, int minimumRoomSize, bool splitIsWidth)
+	private void split(List<Room> newRooms, int minimumRoomSize, bool splitIsHorizontal)
 	{
 		//no checks, they happen in Split(...)
 		Random random = new Random();
-		if (splitIsWidth) {
+		if (splitIsHorizontal) {
 			int newWidth = random.Next(minimumRoomSize, area.Width - minimumRoomSize ); //TODO: check add +1 || +2?
 
-			if (!isWallOnDoorPos(splitIsWidth, newWidth)) {
+			if (!isWallOnDoorPos(splitIsHorizontal, newWidth)) {
 				var newRoom = new Room(new Rectangle(area.X, area.Y, newWidth + 1, area.Height));
 				newRooms.Add(newRoom);
 				Console.WriteLine("Added " + newRoom);
@@ -56,7 +56,7 @@ class Room
 		else{
 			int newHeight = random.Next(minimumRoomSize, area.Height - minimumRoomSize); //add +1 || +2?
 
-			if (!isWallOnDoorPos(splitIsWidth, newHeight)) {
+			if (!isWallOnDoorPos(splitIsHorizontal, newHeight)) {
 				var newRoom = new Room(new Rectangle(area.X, area.Y, area.Width, newHeight + 1));
 				Console.WriteLine("Added " + newRoom);
 				newRooms.Add(newRoom);
@@ -72,12 +72,12 @@ class Room
 		}
 	}
 
-	private bool isWallOnDoorPos(bool splitIsWidth, int newDirectionRand)
+	private bool isWallOnDoorPos(bool splitIsHorizontal, int newDirectionRand)	//check if new wall will overlap door
 	{
-		if (splitIsWidth) {
+		if (splitIsHorizontal) {
 			foreach (Door connectedDoor in connectedDoors) {
-				if (connectedDoor.location.X == area.X + newDirectionRand) { //check new wall same X location as existing connected door
-					if (connectedDoor.location.Y == area.Y || connectedDoor.location.Y == area.Y + area.Height -1) { //check both top and bottom corners for overlap
+				if (connectedDoor.Location.X == area.X + newDirectionRand) { //check new wall same X location as existing connected door
+					if (connectedDoor.Location.Y == area.Y || connectedDoor.Location.Y == area.Y + area.Height -1) { //check both top and bottom corners for overlap
 						Console.WriteLine("Blocking:" + connectedDoor.ToString() + ", skipping " + this);
 						Console.WriteLine("newDirRand is: " + newDirectionRand);
 						return true;
@@ -88,8 +88,8 @@ class Room
 		}
 		else {
 			foreach (Door connectedDoor in connectedDoors) {
-				if (connectedDoor.location.Y == area.Y + newDirectionRand) { //check new wall same Y location as existing connected door
-					if (connectedDoor.location.X == area.X || connectedDoor.location.X == area.X + area.Width -1) { //check both left and right corners for overlap
+				if (connectedDoor.Location.Y == area.Y + newDirectionRand) { //check new wall same Y location as existing connected door
+					if (connectedDoor.Location.X == area.X || connectedDoor.Location.X == area.X + area.Width -1) { //check both left and right corners for overlap
 						Console.WriteLine("Blocking " + connectedDoor.ToString() + ", skipping " + this);
 						Console.WriteLine("newDirRand is: " + newDirectionRand);
 						return true;

@@ -9,45 +9,46 @@ using System.Drawing;
  */
 class Door
 {
-    public readonly Point location;
+    public readonly Point Location;
 
     //Keeping tracks of the Rooms that this door connects to,
     //might make your life easier during some of the assignments
-    public Room roomA = null;
-    public Room roomB = null;
+    public Room RoomA = null;
+    public Room RoomB = null;
 
     //You can also keep track of additional information such as whether the door connects horizontally/vertically
     //Again, whether you need flags like this depends on how you implement the algorithm, maybe you need other flags
-    public bool horizontal = false;
+    public bool SplitIsHorizontal = false;
 
     public Door(Point pLocation)
     {
-        location = pLocation;
+        Location = pLocation;
     }
 
     public Door(Room roomToBeSplit, List<Room> connectingRooms)
     {
         if (connectingRooms.Count == 2) {
-            roomA = connectingRooms[0];
-            roomB = connectingRooms[1];
+            RoomA = connectingRooms[0];
+            RoomB = connectingRooms[1];
 
             Random random = new Random();
             var toBeSplitArea = roomToBeSplit.area;
-            bool splitIsWidth = roomA.area.Y == roomB.area.Y;
-            
-            if (splitIsWidth) {
+            SplitIsHorizontal = RoomA.area.Y == RoomB.area.Y;
+
+            if (SplitIsHorizontal) {
                 int randDoorPos = random.Next(1, toBeSplitArea.Height - 1);
-                location = new Point(roomA.area.X + roomA.area.Width - 1,
-                    roomA.area.Y + randDoorPos); //random Y axis door position on a set X axis wall
+                Location = new Point(RoomA.area.X + RoomA.area.Width - 1,
+                    RoomA.area.Y + randDoorPos); //random Y axis door position on a set X axis wall
             }
             else {
                 int randDoorPos = random.Next(1, toBeSplitArea.Width - 1);
-                location = new Point(roomA.area.X + randDoorPos,
-                    roomA.area.Y + roomA.area.Height - 1); //random X axis door position on a set Y axis wall
+                Location = new Point(RoomA.area.X + randDoorPos,
+                    RoomA.area.Y + RoomA.area.Height - 1); //random X axis door position on a set Y axis wall
             }
             
-            roomA.connectedDoors.Add(this);
-            roomB.connectedDoors.Add(this);
+            //add this door to ConnectedDoors list inside room class
+            RoomA.connectedDoors.Add(this); 
+            RoomB.connectedDoors.Add(this);
         }
     }
 
@@ -57,8 +58,8 @@ class Door
 
     public override string ToString()
     {
-        if (location != Point.Empty && location != null)
-            return "Door location: " + location.ToString();
+        if (Location != Point.Empty && Location != null)
+            return "Door location: " + Location.ToString();
         else
             return "Door has no location";
     }

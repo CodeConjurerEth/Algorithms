@@ -18,11 +18,11 @@ using System.Drawing;
 abstract class Dungeon : Canvas
 {
 	//the (unscaled) dimensions of the dungeon (basically how 'tiles' wide and high)
-	public readonly Size size;
+	public readonly Size Size;
 
 	//base implementation assumes dungeon consists of rooms and doors, adapt in subclass if needed
-	public readonly List<Room> rooms = new List<Room>();
-	public readonly List<Door> doors = new List<Door>();
+	public readonly List<Room> Rooms = new List<Room>();
+	public readonly List<Door> Doors = new List<Door>();
 
 	//Set this to false if you want to do all drawing yourself from the generate method.
 	//This might be handy while debugging your own algorithm.
@@ -39,7 +39,7 @@ abstract class Dungeon : Canvas
 	 */
 	public Dungeon(Size pSize) : base(pSize.Width, pSize.Height)
 	{
-		size = pSize;
+		Size = pSize;
 
 		/**/
 		//ignore lines below, this is for rendering scaled canvasses without blurring 
@@ -63,8 +63,8 @@ abstract class Dungeon : Canvas
 	{
 		System.Console.WriteLine(this.GetType().Name + ".Generate:Generating dungeon...");
 
-		rooms.Clear();
-		doors.Clear();
+		Rooms.Clear();
+		Doors.Clear();
 
 		generate(pMinimumRoomSize);
 
@@ -85,8 +85,8 @@ abstract class Dungeon : Canvas
 	protected virtual void draw()
 	{
 		graphics.Clear(Color.Transparent);
-		drawRooms(rooms, wallPen);    
-		drawDoors(doors, doorPen);
+		drawRooms(Rooms, wallPen);    
+		drawDoors(Doors, doorPen);
 	}
 
 	/**
@@ -129,7 +129,7 @@ abstract class Dungeon : Canvas
 	protected virtual void drawDoor (Door pDoor, Pen pColor)
 	{
 		//note the 0.5, 0.5, this forces the drawing api to draw at least 1 pixel ;)
-		graphics.DrawRectangle(pColor, pDoor.location.X, pDoor.location.Y, 0.5f, 0.5f);
+		graphics.DrawRectangle(pColor, pDoor.Location.X, pDoor.Location.Y, 0.5f, 0.5f);
 	}
 
 	//////////////////////////////////////////////////////////////////////////////////////////////

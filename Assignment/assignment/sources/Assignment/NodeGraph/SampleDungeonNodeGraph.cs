@@ -17,7 +17,7 @@ using System.Drawing;
 {
 	protected Dungeon _dungeon;
 
-	public SampleDungeonNodeGraph(Dungeon pDungeon) : base((int)(pDungeon.size.Width * pDungeon.scale), (int)(pDungeon.size.Height * pDungeon.scale), (int)pDungeon.scale/3)
+	public SampleDungeonNodeGraph(Dungeon pDungeon) : base((int)(pDungeon.Size.Width * pDungeon.scale), (int)(pDungeon.Size.Height * pDungeon.scale), (int)pDungeon.scale/3)
 	{
 		Debug.Assert(pDungeon != null, "Please pass in a dungeon.");
 
@@ -32,10 +32,10 @@ using System.Drawing;
 
 		//We assume (bad programming practice 1-o-1) there are two rooms in the given dungeon.
 		//The getRoomCenter is a convenience method to calculate the screen space center of a room
-		nodes.Add(new Node(getRoomCenter(_dungeon.rooms[0])));
-		nodes.Add(new Node(getRoomCenter(_dungeon.rooms[1])));
+		nodes.Add(new Node(getRoomCenter(_dungeon.Rooms[0])));
+		nodes.Add(new Node(getRoomCenter(_dungeon.Rooms[1])));
 		//The getDoorCenter is a convenience method to calculate the screen space center of a door
-		nodes.Add(new Node(getDoorCenter(_dungeon.doors[0])));
+		nodes.Add(new Node(getDoorCenter(_dungeon.Doors[0])));
 
 		//create a connection between the two rooms and the door...
 		AddConnection(nodes[0], nodes[2]);
@@ -59,7 +59,7 @@ using System.Drawing;
 	 */
 	protected Point getDoorCenter(Door pDoor)
 	{
-		return getPointCenter(pDoor.location);
+		return getPointCenter(pDoor.Location);
 	}
 
 	/**

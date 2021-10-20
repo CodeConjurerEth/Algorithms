@@ -24,37 +24,37 @@ class SufficientDungeon : Dungeon
 
     protected override void generate(int pMinimumRoomSize)
     {
-        rooms.Add(new Room(new Rectangle(0,0, size.Width, size.Height)));
+        Rooms.Add(new Room(new Rectangle(0,0, Size.Width, Size.Height)));
 
         for (int index = 0; index < 15; index++) { //gonna have to change this
 	        List<Room> newRooms = new List<Room>();
 	        Door newDoor = null;
 	        Random random = new Random();
-	        var roomToSplit = rooms[random.Next(0, rooms.Count-1)];
+	        var roomToSplit = Rooms[random.Next(0, Rooms.Count-1)];
 	        
-	        Console.WriteLine("\n" + roomToSplit.ToString() + " to be split into: "); //TODO: rooms are added before door overlap check?
+	        Console.WriteLine("\n" + roomToSplit.ToString() + " to be split into: ");
 	        
 	        newRooms.AddRange(roomToSplit.Split(pMinimumRoomSize));
 	        bool wasSplit = newRooms.Count == 2;
 	        if (wasSplit) {
 		        newDoor = new Door(roomToSplit, newRooms);
-		        doors.Add(newDoor);
+		        Doors.Add(newDoor);
 	        }
 	        /*Debugging*/
 	        if (newDoor != null) {
 		        Console.WriteLine(newDoor.ToString());
 	        }/**/
 
-	        rooms.Remove(roomToSplit);
-	        rooms.AddRange(newRooms);
+	        Rooms.Remove(roomToSplit);
+	        Rooms.AddRange(newRooms);
         }
     }
 
     public override string ToString()
     {
 	    string s = "";
-	    for (int index = 0; index < doors.Count; index++) {
-		    s += doors[index].ToString() + "\n";
+	    for (int index = 0; index < Doors.Count; index++) {
+		    s += Doors[index].ToString() + "\n";
 	    }
 		return s;
     }
