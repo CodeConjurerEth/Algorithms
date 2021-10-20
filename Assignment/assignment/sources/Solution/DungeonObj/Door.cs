@@ -30,18 +30,24 @@ class Door
         if (connectingRooms.Count == 2) {
             roomA = connectingRooms[0];
             roomB = connectingRooms[1];
-        }
-        Random random = new Random();
-        var toBeSplitArea = roomToBeSplit.area;
-        bool splitIsWidth = roomA.area.Y == roomB.area.Y;
-        
-        if (splitIsWidth) {
-            int randDoorPos = random.Next(1, toBeSplitArea.Height - 1);
-            location = new Point(roomA.area.X + roomA.area.Width - 1, roomA.area.Y + randDoorPos); //random Y axis door position on a set X axis wall
-        }
-        else {
-            int randDoorPos = random.Next(1, toBeSplitArea.Width - 1);
-            location = new Point(roomA.area.X + randDoorPos, roomA.area.Y + roomA.area.Height - 1); //random X axis door position on a set Y axis wall
+
+            Random random = new Random();
+            var toBeSplitArea = roomToBeSplit.area;
+            bool splitIsWidth = roomA.area.Y == roomB.area.Y;
+            
+            if (splitIsWidth) {
+                int randDoorPos = random.Next(1, toBeSplitArea.Height - 1);
+                location = new Point(roomA.area.X + roomA.area.Width - 1,
+                    roomA.area.Y + randDoorPos); //random Y axis door position on a set X axis wall
+            }
+            else {
+                int randDoorPos = random.Next(1, toBeSplitArea.Width - 1);
+                location = new Point(roomA.area.X + randDoorPos,
+                    roomA.area.Y + roomA.area.Height - 1); //random X axis door position on a set Y axis wall
+            }
+            
+            roomA.connectedDoors.Add(this);
+            roomB.connectedDoors.Add(this);
         }
     }
 
@@ -52,7 +58,7 @@ class Door
     public override string ToString()
     {
         if (location != Point.Empty && location != null)
-            return "Door location: " + location.ToString() + "\n A: " + roomA.ToString() + "\n B: " + roomB.ToString();
+            return "Door location: " + location.ToString();
         else
             return "Door has no location";
     }
