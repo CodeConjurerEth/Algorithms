@@ -18,7 +18,7 @@ class Door
 
     //You can also keep track of additional information such as whether the door connects horizontally/vertically
     //Again, whether you need flags like this depends on how you implement the algorithm, maybe you need other flags
-    public bool SplitIsHorizontal = false;
+    public bool SplitIsWidth = false;
 
     public Door(Point pLocation)
     {
@@ -33,9 +33,9 @@ class Door
 
             Random random = new Random();
             var toBeSplitArea = roomToBeSplit.area;
-            SplitIsHorizontal = RoomA.area.Y == RoomB.area.Y;
+            SplitIsWidth = RoomA.area.Y == RoomB.area.Y;
 
-            if (SplitIsHorizontal) {
+            if (SplitIsWidth) {
                 int randDoorPos = random.Next(1, toBeSplitArea.Height - 1);
                 Location = new Point(RoomA.area.X + RoomA.area.Width - 1,
                     RoomA.area.Y + randDoorPos); //random Y axis door position on a set X axis wall

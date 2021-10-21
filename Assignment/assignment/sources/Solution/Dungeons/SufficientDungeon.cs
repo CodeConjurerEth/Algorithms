@@ -30,16 +30,19 @@ class SufficientDungeon : Dungeon
 	        List<Room> newRooms = new List<Room>();
 	        Door newDoor = null;
 	        Random random = new Random();
-	        var roomToSplit = Rooms[random.Next(0, Rooms.Count-1)];
+	        var roomToSplit = Rooms[random.Next(0, Rooms.Count - 1)];
 	        
 	        Console.WriteLine("\n" + roomToSplit.ToString() + " to be split into: ");
 	        
 	        newRooms.AddRange(roomToSplit.Split(pMinimumRoomSize));
 	        bool wasSplit = newRooms.Count == 2;
+	        
 	        if (wasSplit) {
 		        newDoor = new Door(roomToSplit, newRooms);
 		        Doors.Add(newDoor);
 	        }
+	        //TODO: when a door is connected to a room and it gets split, we lose connection -> don't make connection to new one
+	        
 	        /*Debugging*/
 	        if (newDoor != null) {
 		        Console.WriteLine(newDoor.ToString());
